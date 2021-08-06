@@ -7,13 +7,15 @@ def efficient_fibonacci_algorithm(n):
     
     return f
 
-# def fibonacci(n):
-#     if n <= 1:
-#         return n
-#     else:
-#         return fibonacci(n-1) + fibonacci(n-2)
+def main():
+    value = colect_data()
+    result = efficient_fibonacci_algorithm(value)
+    print(result)
 
-# fib = fibonacci(20)
 
-fib = efficient_fibonacci_algorithm(20)
-print(fib)
+def colect_data():
+
+    value = input("Enter with value: ")
+    return int(value)
+
+main()
